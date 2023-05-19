@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --darknavy: rgb(24, 24, 100);
+    --lightgrey: lightgrey;
+}
+
+* {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #011931;
+    background-image: url("img/landscape.jpg");
+    background-blend-mode: screen;
+    background-size: 215vh 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+.solarsystem-navbar {
+    background-color: var(--darknavy);
+    border: 2px solid rgb(33, 33, 80);
+    height: 4rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.solarsystem-navbar section {
+    color: var(--lightgrey);
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.solarsystem-navbar img {
+    width: 6vh;
+}
+
+.solarsystem-navbar input {
+    width: 30rem;
+    margin: 0 auto;
+    background-color: var(--darknavy);
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--lightgrey);
+
+}
+
+#welcome-section {
+    color: rgba(15, 15, 15, 0.733);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+#btn-1 {
+    width: 20rem;
+    height: 3rem;
+    color: var(--lightgrey);
+    font-weight: 600;
+    font-size: 0.9rem;
+    background-color: var(--darknavy);
+    border: 2px solid navy;
+    border-radius: 5px;
+}
+
+.planets {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+
+}
+
+.allplanets {
+    opacity: 0;
+}
+
+.planetInSpace {
+    transform: translateY(0);
+    transition: opacity 1s ease-out;
+    opacity: 1;
+}
+
+#planets img {
+    margin: 1rem;
+    float: left;
+    transition: all 250ms;
+}
+
+
+#planets img:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+#planet0 img {
+    width: 30vh;
+}
+
+#planet1 img {
+    width: 10vh;
+}
+
+
+#planet2 img,
+#planet3 img {
+    width: 15vh;
+}
+
+
+#planet4 img {
+    width: 12vh;
+}
+
+#planet5 img,
+#planet6 img {
+    width: 20vh;
+}
+
+#planet7 img,
+#planet8 img {
+    width: 17vh;
+}
+
+/* Animation för rymdrakaten */
+
+.rocket {
+    width: 30vh;
+    position: absolute;
+    bottom: -10px;
+    transition: transform 4s ease-in;
+    left: calc(50vw - 15vh);
+}
+
+.rocketInSpace {
+    transform: translateY(-110vh);
+}

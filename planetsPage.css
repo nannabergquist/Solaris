@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --darknavy: rgb(24, 24, 100);
+    --lightgrey: lightgrey;
+}
+
+* {
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(1, 25, 49);
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png);
+    background-repeat: repeat;
+}
+
+#info-about-planet {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+#info-about-planet h1 {
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+h3 {
+    color: rgb(219, 164, 80);
+}
+
+
+p {
+    color: var(--lightgrey);
+}
+
+#desc {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.planet-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(7, auto);
+    gap: 1rem 6rem;
+    justify-content: center;
+}
+
+#griditem1 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    border-bottom: 1px solid rgb(97, 83, 83);
+}
+
+#tempday {
+    grid-column: 1/1;
+    grid-row: 2/3;
+}
+
+#griditem2 {
+    grid-column: 3/3;
+    grid-row: 1/2;
+    border-bottom: 1px solid rgb(97, 83, 83);
+}
+
+#tempnight {
+    grid-column: 3/3;
+    grid-row: 3/2;
+}
+
+#griditem3 {
+    grid-column: 1/1;
+    grid-row: 3/4;
+    border-bottom: 1px solid rgb(97, 83, 83);
+}
+
+#latin-name {
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+
+
+#griditem4 {
+    grid-column: 3/3;
+    grid-row: 3/4;
+    border-bottom: 1px solid rgb(97, 83, 83);
+}
+
+#distance {
+    grid-column: 3/3;
+    grid-row: 4/5;
+}
+
+#griditem5 {
+    grid-column: 1/4;
+    grid-row: 5/6;
+    border-bottom: 1px solid rgb(97, 83, 83);
+}
+
+#moons {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 7em;
+}
+
+#moons>p {
+    text-align: center;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.navbtn {
+    display: flex;
+    justify-content: center;
+    padding: 1em 1.5em;
+    color: var(--lightgrey);
+    font-weight: 600;
+    font-size: 1.25rem;
+    background-color: rgba(7, 7, 83, 0.788);
+    border: 4px solid navy;
+    border-radius: 5px;
+}
+
+
+
+.navbtn:hover,
+.navbtn:focus {
+    background: navy;
+}
+
+#pagination {
+    text-align: center;
+    position: fixed;
+    bottom: 2em;
+    left: 50vw;
+    transform: translateX(-50%);
+    background-color: rgb(1, 25, 49);
+    padding: 0.5rem;
+    box-shadow: 0 0 1em 1em rgb(1, 25, 49);
+}
+
+
+#pagination a {
+    color: var(--lightgrey);
+    display: flexbox;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+
+}
+
+#pagination a.active {
+    background-color: rgba(248, 164, 37, 0.664);
+    color: var(--lightgrey);
+    border: 1px solid rgb(228, 199, 156);
+}
+
+#pagination a:hover:not(.active) {
+    background-color: rgb(219, 195, 159);
+}

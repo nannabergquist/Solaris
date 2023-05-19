@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+</head>
+
+<body>
+
+    <h1>Error 404</h1>
+    <button class="btn" id="btnreturn">Gå tillbaka till startsida</button>
+
+    <style>
+        body {
+            background-color: rgb(1, 25, 49);
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png);
+            background-repeat: repeat;
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        .btn {
+            color: whitesmoke;
+            font-weight: 600;
+            font-size: 1.25rem;
+            background-color: rgba(7, 7, 83, 0.788);
+            border: 4px solid navy;
+            border-radius: 5px;
+            padding: 1em 1.5em;
+        }
+    </style>
+
+    <script>
+        let returnBtn = document.getElementById('btnreturn');
+
+        returnBtn.addEventListener('click', function () {
+            window.location.href = "index.html"
+        })
+    </script>
+</body>
+
+</html>

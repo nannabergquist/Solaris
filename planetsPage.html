@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Page</title>
+    <link rel="stylesheet" href="./planetsPage.css">
+</head>
+
+<body>
+    <nav id="main-nav">
+        <button class="navbtn navbtn-wikipedia-page" id="wikipedia-page">LÄS MER? KLICKA HÄR</button>
+        <button class="navbtn navbtn-return-topage" id="return-topage">TILLBAKA TILL JORDEN</button>
+    </nav>
+
+    <section id="info-about-planet">
+        <h1 id="name-of-the-planet"></h1>
+        <p id="desc"></p>
+    </section>
+    <section class="planet-container">
+        <h3 id="griditem1">Tempratur dag</h3>
+        <p id="tempday"></p>
+        <h3 id="griditem2">Tempratur natt</h3>
+        <p id="tempnight"></p>
+        <h3 id="griditem3">Latinska namnet</h3>
+        <p id="latin-name"></p>
+        <h3 id="griditem4">Km ifrån solen</h3>
+        <p id="distance"></p>
+        <h3 id="griditem5">Månar</h3>
+        <div id="moons" class="moons"></div>
+    </section>
+
+    <section>
+        <div id="pagination">
+            <a href="#" id="back">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#">9</a>
+            <a href="#" id="forward">&raquo;</a>
+        </div>
+    </section>
+
+    <script src="planetsPage.js"></script>
+</body>
+
+</html>
